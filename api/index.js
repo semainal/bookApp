@@ -14,6 +14,9 @@ const path = require("path");
 dotenv.config();
 app.use(express.json());
 app.use("/images",express.static(path.join(__dirname,"/images")))
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.MONGODB_URI, 
