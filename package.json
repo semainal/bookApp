@@ -1,8 +1,9 @@
 {
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "netlify-cli": "*"
   },
-  "dependencies": {
-    "mongodb": "^5.7.0"
+  "scripts": {
+    "build": "mkdir -p dist && cp -R src/* dist/",
+    "start": "netlify dev"
   }
 }
