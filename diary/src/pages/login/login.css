@@ -1,0 +1,92 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.loginTitle {
+    text-align: center;
+    align-items: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 36px;
+    color: #3A4F7A;
+ 
+}
+
+.loginForm {
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginLabel{
+    font-family: "Caveat", sans-serif;
+    font-size: 24px;
+    color: #3A4F7A;
+
+}
+
+.loginForm >label {
+    margin: 10px 0;
+
+}
+
+.loginInput {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    color:#3A4F7A ;
+    width: 400px;
+    padding: 20px;
+}
+
+.loginInput:hover{
+    border:2px solid #D9ACF5;
+}
+
+.loginButton {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.loginButton:disabled{
+    cursor: not-allowed;
+   
+}
+
+.loginButton:hover{
+    border: 2px solid #D9ACF5;
+}
+
+.loginRegisterButton {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+
+
+}
+
+.loginRegisterButton:hover{
+    border: 2px solid #D9ACF5;
+}
+
+

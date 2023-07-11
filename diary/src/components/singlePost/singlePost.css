@@ -1,0 +1,145 @@
+.singlePost{
+    width: 45%;
+    margin: auto;
+    margin-bottom: 50px;
+
+
+}
+
+.singlePostTitle{
+    text-align: center;
+    align-items: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 36px;
+    color: #3A4F7A;
+}
+
+.singlePostTitleInput{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 36px;
+    color: #3A4F7A;
+    border:1px solid #2ec6c3;
+    border-radius: 10px;
+    display: flex;
+    width: 90%;
+    margin-bottom: 10px;
+
+ 
+    
+}
+
+.singlePostTitleInput:hover{
+    border:1px solid #D9ACF5;
+    border-radius: 10px;
+}
+
+.singlePostAuthor{
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    font-family: "Caveat", sans-serif;
+    color: #2ec6c3;
+    margin: auto;
+}
+
+.singlePostAuthorInput{
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    font-family: "Caveat", sans-serif;
+    color: #2ec6c3;
+    width: 70%;
+    margin-top: 10px;
+    margin: auto;  
+    border:1px solid #2ec6c3;
+    border-radius: 5px; 
+}
+
+
+.singlePostAuthorInput:hover{
+    border:1px solid #D9ACF5;
+    border-radius: 5px;
+}
+.singlePostText{
+    text-align: center;
+    align-items: center;
+    color: #6d8bc9;
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 18px;
+    width: 300px;
+    margin: auto;
+
+   
+
+}
+
+.singlePostTextInput{
+  
+    margin-top: 20px;
+    border: 2px solid #AAE3E2;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    color:#6d8bc9;
+    width: 90%;
+    height: 400px;
+    line-height: 20px;
+    border-radius: 10px;
+ 
+}
+
+.singlePostTextInput:hover{
+    border:2px solid #D9ACF5;
+    border-radius: 10px;
+}
+.singlePostSub{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    border-radius:10px;
+    font-family: "Libre Baskerville", sans-serif;
+    color:#6d8bc9;
+    padding: 10px;
+}
+
+.singlePostCol{
+    border: 2px solid #6d8bc9;;
+    border-radius: 10px;
+}
+
+.cardButtons{
+ 
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.cardButton {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.cardButton:hover{
+    border:2px solid #D9ACF5;
+}
+
+.singlePostImg{
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+}

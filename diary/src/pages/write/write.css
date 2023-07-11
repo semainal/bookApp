@@ -1,0 +1,77 @@
+.write{
+    margin: auto;
+    width: 60%;
+    margin-bottom: 150px;
+    
+}
+
+.writeFormBox{
+    border: 2px solid #6d8bc9;;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.writeTitle{
+    text-align: center;
+    align-items: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 36px;
+    color: #3A4F7A;
+}
+
+.writeInput{
+    margin-top: 20px;
+    border: 2px solid #AAE3E2;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    color:#6d8bc9;
+    width: 80%;
+}
+
+.writeInput:hover{
+    border:2px solid #D9ACF5;
+}
+
+
+
+.writeSubmit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+
+}
+
+.writeSubmit:hover{
+    border:2px solid #D9ACF5;
+}
+
+.writeText {
+    width: 80%;
+    height: 300px;
+}
+
+.writeIcon {
+    cursor: pointer;
+}
+
+.writeInfo {
+    text-align: center;
+    color: #D9ACF5;
+}
+
+.writeImg {
+    width: 50%;
+    height: 250px;
+}

@@ -1,0 +1,73 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+ 
+}
+
+.registerTitle {
+    text-align: center;
+    align-items: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 36px;
+    color: #3A4F7A;
+}
+
+.registerForm {
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.registerLabel{
+    font-family: "Caveat", sans-serif;
+    font-size: 24px;
+    color: #3A4F7A;
+}
+
+.registerForm >label {
+    margin: 10px 0;
+
+}
+
+.registerInput {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    color:#3A4F7A ;
+    width: 400px;
+    padding: 20px;
+
+}
+
+.registerInput:hover{
+    border:2px solid #D9ACF5;
+}
+
+.registerButton {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.registerButton:hover{
+    border: 2px solid #D9ACF5;
+}
+
+.error {
+    color: #D9ACF5;
+    font-size: 24px;
+    margin-bottom: 20px;
+}

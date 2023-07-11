@@ -1,0 +1,127 @@
+.settings{
+    display: flex;
+    margin-bottom: 100px;
+    
+}
+
+.settingsWrapper {
+    flex: 9;
+   
+}
+
+.settingsTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3A4F7A;
+    font-family: "Caveat", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.settingsUpdateTitle {
+    text-align: center;
+    align-items: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 36px;
+    color: #3A4F7A;
+  
+}
+
+.settingsDeleteTitle {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+}
+
+.settingsDeleteTitle:hover{
+    border:2px solid #D9ACF5;
+}
+
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.settingsPP {
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+
+}
+
+.settingsPP > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.settingsPPIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:2px solid #AAE3E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color:#D9ACF5 ;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.settingsPPIcon:hover{
+    border:2px solid #3A4F7A;
+    border-radius: 50%;
+    color: #AAE3E2;
+
+}
+
+.settingsForm > label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.settingsForm > input {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    color:#3A4F7A ;
+    width: 400px;
+}
+
+.settingsForm > input:hover{
+    border:2px solid #D9ACF5;
+}
+
+.settingsSubmit {
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+}
+
+.settingsSubmit:hover{
+    border:2px solid #D9ACF5;
+}
+
+
+.settingsLabel{
+    color: #3A4F7A;
+    font-family: "Caveat", sans-serif;
+}

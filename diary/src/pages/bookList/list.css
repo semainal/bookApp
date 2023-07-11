@@ -1,0 +1,72 @@
+.bookList{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.bookListTitle{
+    text-align: center;
+    align-items: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 36px;
+    color: #3A4F7A;
+    margin-bottom: 20px;
+}
+
+.bookListInput{
+   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 30px;
+    color: #3A4F7A;
+    border:1px solid #2ec6c3;
+    border-radius: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.bookListInput:hover{
+    border:2px solid #D9ACF5;
+}
+
+.bookListButton{
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+   
+}
+
+.bookListButton:hover{
+    border:2px solid #D9ACF5;
+}
+
+.bookListLi{
+    list-style:decimal;  
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 24px;
+    color: #3A4F7A;
+}
+
+.bookListDeleteButton{
+    border: 2px solid #AAE3E2;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    color: #3A4F7A;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 7px;
+    font-family: "Libre Baskerville", sans-serif;
+    margin-left: 20%;
+}
+
+.bookListDeleteButton:hover{
+    border:2px solid #D9ACF5;
+}

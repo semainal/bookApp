@@ -1,0 +1,75 @@
+.post {
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  width: 25%;
+  float: left;
+
+}
+
+.card-title {
+  text-align: center;
+  align-items: center;
+  font-family: "Caveat", sans-serif;
+  font-size: 36px;
+  color: #3A4F7A;
+ 
+}
+
+.card-author {
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+  font-family: "Caveat", sans-serif;
+  color: #2ec6c3;
+}
+
+.card-text {
+  text-align: center;
+  align-items: center;
+  color: #6d8bc9;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 100px;
+}
+
+.postCol {
+  border: 2px solid #6d8bc9;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  
+
+}
+
+.card-footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  font-family: "Libre Baskerville", sans-serif;
+  color: #6d8bc9;
+}
+
+.postImg{
+  width: 50%;
+  margin-top: 10px;
+  height: 100px;
+  
+}
+
+
+
+
+  
