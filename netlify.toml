@@ -27,14 +27,14 @@
 # here but we recommend using the Netlify UI for sensitive
 # values to keep them out of your source repository.
 [context.production]
-  publish = "output/"
+  publish = "client/"
   command = "make publish"
   environment = { NODE_VERSION = "14.15.3" }
 
 # Deploy Preview context: all deploys generated from
 # a pull/merge request will inherit these settings.
 [context.deploy-preview]
-  publish = "dist/"
+  publish = "client/"
 
 # Here is an example of how to define context-specific
 # environment variables. To avoid committing sensitive
@@ -160,9 +160,9 @@
 # for environment variables. Environment variables for Netlify
 # Dev should be set under [context.dev.environment] instead.
 [dev]
-  command = "yarn start"
+  command = "npm start"
   port = 8888
-  publish = "dist"
+  publish = "client"
 
 
 
