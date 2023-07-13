@@ -4,6 +4,7 @@
     "netlify-cli": "^15.8.1"
   },
   "dependencies": {
+    "@netlify/build": "^29.16.2",
     "mongodb": "^5.7.0"
   }
 }

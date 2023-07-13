@@ -1,14 +1,17 @@
+# Build sürecini yapılandırma
 [build]
-  command = "npm run build"
-  publish = "public"
+  command = "npm build"  # Projenizin derlenmesi için kullanılacak komut
+  publish = "client"        # Derlenen dosyaların bulunduğu klasör
 
+# Rewrites ve yönlendirmeleri yapılandırma
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  from = "/*"             # Yönlendirme yapılacak URL deseni
+  to = "/index.html"      # Yönlendirilen hedef URL
 
+# Parola koruması ekleme
 [[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
-    X-Frame-Options = "DENY"
+  for = "/*"              # Parola korumasının uygulanacağı URL deseni
+  [headers.values]
+    Basic-Auth = "username:password"  # Parola koruması için kullanıcı adı ve şifre
+
+
