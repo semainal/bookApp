@@ -11,6 +11,7 @@
   # directory if one has been set, or the root directory if
   # a base has not been set. This sample publishes the directory
   # located at the absolute path "root/project/build-output"
+
   publish = "build-output/"
 
   # Default build command.
@@ -161,7 +162,7 @@
 [dev]
   command = "npm start"
   port = 8888
-  publish = "client"
+  publish = "dist"
 
 
 
