@@ -12,16 +12,14 @@ const apiUrl = process.env.REACT_APP_API_URL;
 
 axios.get(`${apiUrl}users`)
   .then(response => {
-    // İstek başarılı olduğunda yapılacak işlemler
-    console.log(response.data); // Örnek: Gelen veriyi konsola yazdırma
+   
+    console.log(response.data); 
 
-    // Diğer işlemler...
   })
   .catch(error => {
-    // İstek hata verdiğinde yapılacak işlemler
-    console.error(error); // Örnek: Hata mesajını konsola yazdırma
+    
+    console.error(error); 
 
-    // Diğer işlemler...
   });
 
 
