@@ -3,7 +3,7 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
 //REGISTER
-router.post("/auth/register",async(req,res)=> {
+router.post("/register",async(req,res)=> {
     try {
 
         const salt = await bcrypt.genSalt(10);
@@ -28,7 +28,7 @@ router.post("/auth/register",async(req,res)=> {
 
 //LOGIN
 
-router.post("/auth/login", async(req,res)=> {
+router.post("/login", async(req,res)=> {
     try{
         const user = await User.findOne({username: req.body.username})
         !user && res.status(400).json("Wrong credentials!")

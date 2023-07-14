@@ -8,6 +8,21 @@ const postRoute = require("./routes/posts")
 const bookRoute = require("./routes/books")
 const multer = require("multer")
 const path = require("path");
+const apiUrl = process.env.REACT_APP_API_URL;
+
+axios.get(`${apiUrl}users`)
+  .then(response => {
+    // İstek başarılı olduğunda yapılacak işlemler
+    console.log(response.data); // Örnek: Gelen veriyi konsola yazdırma
+
+    // Diğer işlemler...
+  })
+  .catch(error => {
+    // İstek hata verdiğinde yapılacak işlemler
+    console.error(error); // Örnek: Hata mesajını konsola yazdırma
+
+    // Diğer işlemler...
+  });
 
 
 
@@ -31,6 +46,7 @@ mongoose.connect(process.env.MONGODB_URI,
     .catch((err) => console.log(err));
 
 
+    
     const storage = multer.diskStorage({
       destination:(req,file, cb) =>{
         cb(null, "images");
