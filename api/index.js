@@ -8,19 +8,7 @@ const postRoute = require("./routes/posts")
 const bookRoute = require("./routes/books")
 const multer = require("multer")
 const path = require("path");
-const apiUrl = process.env.REACT_APP_API_URL;
 
-axios.get(`${apiUrl}users`)
-  .then(response => {
-   
-    console.log(response.data); 
-
-  })
-  .catch(error => {
-    
-    console.error(error); 
-
-  });
 
 
 
