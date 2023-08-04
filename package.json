@@ -5,6 +5,8 @@
   },
   "dependencies": {
     "@netlify/build": "^29.16.2",
+    "env-cmd": "^10.1.0",
+    "gh-pages": "^5.0.0",
     "mongodb": "^5.7.0",
     "mongoose": "^6.11.3"
   }
