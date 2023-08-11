@@ -3,7 +3,7 @@
 # Genel ayarlar
 [build]
   publish = "public"  # Oluşturulan dosyaların dağıtılacağı klasör
-  command = "npm run build"  # Yapılandırma komutu (örneğin: npm veya yarn)
+  command = "npm start"  # Yapılandırma komutu (örneğin: npm veya yarn)
   functions = "api"  # Serverless fonksiyonlar dizini (varsa)
 
 [[redirects]]
