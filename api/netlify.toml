@@ -1,0 +1,3 @@
+[build]
+  base = "api"
+  command = "npm run start"  # API başlatma komutu
