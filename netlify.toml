@@ -1,0 +1,25 @@
+# netlify.toml
+
+# Genel ayarlar
+[build]
+  publish = "public"  # Oluşturulan dosyaların dağıtılacağı klasör
+  command = "npm run build"  # Yapılandırma komutu (örneğin: npm veya yarn)
+  functions = "api"  # Serverless fonksiyonlar dizini (varsa)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+
+# Hızlı bir test örneği için aşağıdaki öğeyi ekleyebilirsiniz
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
