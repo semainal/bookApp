@@ -3,7 +3,3 @@
   to = "https://master--bookdiaryapp.netlify.app/auth/:splat"  # API sunucusunun adresi, :splat dinamik parametre olarak kullanılabilir
   status = 200  # 200 OK yanıtı verilir
 
-  [build.environment]
-  MONGODB_URI = "mongodb+srv://semainal:semainal@cluster0.fk5w3rx.mongodb.net/bookApp"
-  MONGODB_USERNAME = "semainal"
-  MONGODB_PASSWORD = "semainal"
