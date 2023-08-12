@@ -1,3 +1,5 @@
-[build]
-  base = "api"
-  command = "npm start"  # API başlatma komutu
+[[redirects]]
+  from = "/*"
+  to = "http://api.example.com/:splat"  # API sunucusuna yönlendirme
+  status = 200
+  force = true

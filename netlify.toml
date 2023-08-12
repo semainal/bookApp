@@ -1,25 +1,18 @@
-# netlify.toml
 
-# Genel ayarlar
+
 [build]
-  publish = "public"  # Oluşturulan dosyaların dağıtılacağı klasör
-  command = "npm start"  # Yapılandırma komutu (örneğin: npm veya yarn)
-  functions = "api"  # Serverless fonksiyonlar dizini (varsa)
+  command = "npm run build"  # İstemci derleme komutu
+  publish = "client/build"   # İstemci tarafının derlenen ürün klasörü
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-
-# Hızlı bir test örneği için aşağıdaki öğeyi ekleyebilirsiniz
+# İstemci kısmı için yapılandırma
 [[redirects]]
-  from = "/old-path"
-  to = "/new-path"
-  status = 301
+  from = "/api/*"            # API çağrılarına yönlendirme
+  to = "http://api.example.com/:splat"  # API sunucusuna yönlendirme
+  status = 200
+  force = true
+
