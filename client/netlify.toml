@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 [build]
 base = ""
 publish = "build"
 command = "client/npm run build"
+=======
+>>>>>>> 31ae0b665d6facc21704c47c4b6957e251645728
 
 
 

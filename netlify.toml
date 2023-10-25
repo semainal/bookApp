@@ -1,18 +1,11 @@
-
-
 [build]
-  command = "npm run build"  # İstemci derleme komutu
-  publish = "client/build"   # İstemci tarafının derlenen ürün klasörü
+  base = "build" # build klasörünü kullan
+  publish = "build" # build klasörünü yayınla
+  command = "npm run build" # Derleme komutu (gerektiğinde bu komutu değiştirin)
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# İstemci kısmı için yapılandırma
-[[redirects]]
-  from = "/api/*"            # API çağrılarına yönlendirme
-  to = "http://api.example.com/:splat"  # API sunucusuna yönlendirme
-  status = 200
-  force = true
 

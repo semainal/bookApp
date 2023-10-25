@@ -9,6 +9,14 @@
     "gh-pages": "^5.0.0",
     "mongodb": "^5.7.0",
     "mongoose": "^6.11.3"
+<<<<<<< HEAD
   }
   
+=======
+  },
+  
+  "scripts": {
+    "build": "react-scripts build"
+}
+>>>>>>> 31ae0b665d6facc21704c47c4b6957e251645728
 }
