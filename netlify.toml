@@ -3,5 +3,5 @@
 
 [[redirects]]
   from = "/api/"
-  to = "/.netlify/functions/mongodb-api/:splat"
+  to = "/.netlify/functions/index/:splat"
   status = 200
