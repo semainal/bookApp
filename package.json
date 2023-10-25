@@ -11,3 +11,9 @@
     "mongoose": "^6.11.3"
   }
 }
+
+{
+  "scripts": {
+    "build": "react-scripts build"
+  }
+}
