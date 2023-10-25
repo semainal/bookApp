@@ -1,19 +1,7 @@
-
-
 [build]
-  command = "npm run build"  # İstemci derleme komutu
-  publish = "client/build"   # İstemci tarafının derlenen ürün klasörü
-
+  functions = "netlify/functions"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/api/*"
+  to = "/.netlify/functions/mongodb-api/:splat"
   status = 200
-
-# İstemci kısmı için yapılandırma
-[[redirects]]
-  from = "/api/*"            # API çağrılarına yönlendirme
-  to = "http://api.example.com/:splat"  # API sunucusuna yönlendirme
-  status = 200
-  force = true
-
