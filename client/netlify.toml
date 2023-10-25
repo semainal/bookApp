@@ -1,11 +1,7 @@
 [build]
-  command = "npm run build"  # İstemci derleme komutu
-  publish = "build"          # İstemci tarafının derlenen ürün klasörü
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+base = ""
+publish = "build"
+command = "client/npm run build"
 
 
 

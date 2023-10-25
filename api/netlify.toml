@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/auth/*"  # API istekleri için yol
-  to = "https://bookdiaryapp.netlify.app/auth/:splat"  # API sunucusunun adresi, :splat dinamik parametre olarak kullanılabilir
-  status = 200  # 200 OK yanıtı verilir
-
