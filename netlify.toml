@@ -1,5 +1,11 @@
 [build]
-base = ""
-publish = "build"
-command = "client/npm run build"
+  base = "build" # build klasörünü kullan
+  publish = "build" # build klasörünü yayınla
+  command = "npm run build" # Derleme komutu (gerektiğinde bu komutu değiştirin)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 
