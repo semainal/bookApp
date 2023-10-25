@@ -8,6 +8,7 @@ const postRoute = require("./routes/posts")
 const bookRoute = require("./routes/books")
 const multer = require("multer")
 const path = require("path");
+const { MongoClient } = require('mongodb');
 
 
 
@@ -20,16 +21,35 @@ app.get('/', function (req, res) {
 });
 
 mongoose.set("strictQuery", false);
-mongoose.connect(process.env.MONGODB_URI, 
-  {
-    useNewUrlParser: true,
-    // useFindAndModify: false,
-    useUnifiedTopology: true,
-    // useCreateIndex: true,
-  })
-    .then(console.log("connected to MongoDB!"))
-    .catch((err) => console.log(err));
+// mongoose.connect(process.env.MONGODB_URI, 
+//   {
+//     useNewUrlParser: true,
+//     // useFindAndModify: false,
+//     useUnifiedTopology: true,
+//     // useCreateIndex: true,
+//   })
+//     .then(console.log("connected to MongoDB!"))
+//     .catch((err) => console.log(err));
 
+exports.handler = async function(event, context) {
+  const uri = process.env.MONGODB_URI; // MongoDB bağlantı URL'nizi buradan alın
+
+  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+  try {
+    await client.connect();
+    const database = client.db('bookApp');
+    const collection = database.collection('users');
+    const queryResult = await collection.find({}).toArray();
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify(queryResult),
+    };
+  } finally {
+    client.close();
+  }
+};
 
     
     const storage = multer.diskStorage({
