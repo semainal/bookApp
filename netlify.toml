@@ -2,8 +2,8 @@
 
 [build]
   command = "npm run build"  # İstemci derleme komutu
-  publish = "path-to-react-app/build"   # İstemci tarafının derlenen ürün klasörü
-  base = "path-to-react-app"
+  publish = "client/build"   # İstemci tarafının derlenen ürün klasörü
+
 
 [[redirects]]
   from = "/*"
