@@ -1,0 +1,34 @@
+
+
+[context.production]
+  command = "npm run build" # Prodüksiyon ortamı için kullanılacak komut.
+
+[context.development]
+  command = "npm run start" # Geliştirme ortamı için kullanılacak komut.
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[build]
+  functions = "functions" # Netlify Functions'ların bulunduğu klasörü belirtin
+
+[build.environment]
+  
+  MY_API_KEY = "E6VCGsgk5LLeTrNnPjX80W9obzXeQ1Tla7rrAJ3CLsTXiXllDBuroEJJYvXTocj9"
+  DB_CONNECTION_STRING = "mongodb+srv://semainal:semainal@cluster0.fk5w3rx.mongodb.net/bookApp"
+
+[context.production]
+  command = "npm run build" 
+
+[context.deploy-preview]
+  command = "npm run build" 
+
+[build]
+  command = "npm run build"
+<<<<<<< Updated upstream:api/netlify.toml
+  publish = "build"
+=======
+  publish = "build"
+>>>>>>> Stashed changes:netlify.toml

@@ -1,15 +1,1 @@
-[build]
-  base = "client" # Netlify'in proje kökünü "client" klasörü olarak ayarla.
-  publish = "build" # Yapılan React uygulamanızın dosyalarını "build" klasöründen dağıt.
-  command = "npm run build" # Uygulamanızı derlemek için kullanılacak komut.
 
-[context.production]
-  command = "npm run build" # Prodüksiyon ortamı için kullanılacak komut.
-
-[context.development]
-  command = "npm run start" # Geliştirme ortamı için kullanılacak komut.
-
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
