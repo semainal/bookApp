@@ -9,4 +9,7 @@
 [context.development]
   command = "npm run start" # Geliştirme ortamı için kullanılacak komut.
 
-
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
