@@ -8,7 +8,7 @@
 
 [[redirects]]
 from = "/*"
-to = "/index.html"
+to = "/client/public/index.html"
 status = 200
 
 [build]
@@ -27,8 +27,4 @@ status = 200
 
 [build]
   command = "npm run build"
-<<<<<<< Updated upstream:api/netlify.toml
   publish = "build"
-=======
-  publish = "build"
->>>>>>> Stashed changes:netlify.toml
