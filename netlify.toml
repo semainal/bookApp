@@ -11,6 +11,7 @@ status = 200
   
   MY_API_KEY = "E6VCGsgk5LLeTrNnPjX80W9obzXeQ1Tla7rrAJ3CLsTXiXllDBuroEJJYvXTocj9"
   DB_CONNECTION_STRING = "mongodb+srv://semainal:semainal@cluster0.fk5w3rx.mongodb.net/bookApp"
+  NODE_VERSION ="18"
 
 
 
